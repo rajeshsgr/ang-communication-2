@@ -1,0 +1,19 @@
+<p>score-card works!</p>
+This is the scored card for 
+First Name:- {{receivedParentMessage.firstName}}
+<br>
+Last Name:- {{receivedParentMessage.lastName}}
+
+
+<form>
+    Number 1:<br>
+    <input type="text" name="number1" [(ngModel)]="number1"><br>
+    Number 2:<br>
+    <input type="text" name="number2" [(ngModel)]="number2">
+  </form>
+
+
+<button (click)="emitTotalScore($event)">Send to Parent</button>
+
+
+

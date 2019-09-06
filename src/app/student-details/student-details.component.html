@@ -1,0 +1,14 @@
+<form >
+    First name:<br>
+    <input type="text" name="firstname" [(ngModel)]="firstName  "><br>
+    Last name:<br>
+    <input type="text" name="lastname" [(ngModel)]="lastName">
+
+    <input type="button" (click)="onButtonClick()" value="Click Me">
+  </form>
+
+  <hr>
+
+  Total Score Recieved is {{receivedTotalScore}}
+
+<app-score-card [receivedParentMessage]="student" (messageToEmit)="getScore($event)"></app-score-card>
